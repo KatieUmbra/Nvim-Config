@@ -43,4 +43,5 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-buffer'
     use 'hrsh7th/vim-vsnip'
     use 'm4xshen/autoclose.nvim'
+    use 'voldikss/vim-floaterm'
 end)
