@@ -19,13 +19,13 @@ require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
 require('plug')      -- Plugins
-require('plugins') -- Plugin configuration
+require('plugins')   -- Plugin configuration
 
 -- Neovide configuration
 if vim.g.Neovide then
-    vim.opt.guiFont = "FiraCode Nerd Font:h14"
+    vim.opt.guiFont = "FiraCode Nerd Font:h18"
     vim.opt.linespace = 0
-    vim.opt.neovie_scale_factor = 1.0
+    vim.opt.neovide_scale_factor = 1.5
 
     -- Helper function for transparency formatting
     local alpha = function()
@@ -38,7 +38,7 @@ if vim.g.Neovide then
     -- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.
     vim.g.neovide_scroll_animation_length = 0
 
-    vim.g.neovide_hide_mouse_when_typing = false
+    vim.g.neovide_hide_mouse_when_typing = true
 
     vim.g.neovide_refresh_rate = 60
     vim.g.neovide_refresh_rate_idle = 5

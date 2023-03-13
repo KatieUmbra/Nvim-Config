@@ -34,15 +34,20 @@ opt.splitbelow = true            -- bool: Place new window below the current one
 
 vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
 vim.opt.shortmess = vim.opt.shortmess + { c = true}
-vim.api.nvim_set_option('updatetime', 300) 
+vim.api.nvim_set_option('updatetime', 300)
 
 vim.cmd([[
 set signcolumn=yes
 autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 ]])
 
-	
-
 -- Treesitter folding 
 vim.wo.foldmethod = 'expr'
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+
+-- Vimspector options
+vim.cmd([[
+let g:vimspector_sidebar_width = 85
+let g:vimspector_bottombar_height = 15
+let g:vimspector_terminal_maxwidth = 70
+]])

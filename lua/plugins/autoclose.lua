@@ -4,6 +4,11 @@ require("autoclose").setup({
             escape = true,
             close = true,
             pair = "$$"
+        },
+        ["<"] = {
+            escape = true,
+            close = true,
+            pair = "<>"
         }
     }
 })

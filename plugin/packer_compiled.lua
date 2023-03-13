@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -94,40 +99,45 @@ _G.packer_plugins = {
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
+  ["betterTerm.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\betterTerm.nvim",
+    url = "https://github.com/CRAG666/betterTerm.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["cmp-nvim-lsp-signature-help"] = {
-    loaded = true,
-    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp-signature-help",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
-  },
-  ["cmp-nvim-lua"] = {
-    loaded = true,
-    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lua",
-    url = "https://github.com/hrsh7th/cmp-nvim-lua"
-  },
   ["cmp-path"] = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  ["cmp-vsnip"] = {
-    loaded = true,
-    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
-    url = "https://github.com/hrsh7th/cmp-vsnip"
-  },
   cmp_luasnip = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["code_runner.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\code_runner.nvim",
+    url = "https://github.com/CRAG666/code_runner.nvim"
+  },
+  ["hlargs.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\hlargs.nvim",
+    url = "https://github.com/m-demare/hlargs.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -138,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lsp-zero.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -194,6 +209,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
   },
+  ["project.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\project.nvim",
+    url = "https://github.com/ahmedkhalf/project.nvim"
+  },
   ["rust-tools.nvim"] = {
     loaded = true,
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\rust-tools.nvim",
@@ -204,10 +224,10 @@ _G.packer_plugins = {
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-floaterm"] = {
+  ["vim-illuminate"] = {
     loaded = true,
-    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-floaterm",
-    url = "https://github.com/voldikss/vim-floaterm"
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   },
   ["vim-pink-moon"] = {
     loaded = true,
@@ -219,10 +239,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startify",
     url = "https://github.com/mhinz/vim-startify"
   },
-  ["vim-vsnip"] = {
+  ["vim-wakatime"] = {
     loaded = true,
-    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
-    url = "https://github.com/hrsh7th/vim-vsnip"
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-wakatime",
+    url = "https://github.com/wakatime/vim-wakatime"
+  },
+  vimspector = {
+    loaded = true,
+    path = "C:\\Users\\kanwi\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vimspector",
+    url = "https://github.com/puremourning/vimspector"
   }
 }
 

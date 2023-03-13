@@ -3,7 +3,7 @@ require('impatient')
 return require('packer').startup(function(use)
     -- Telescope
     use {
-        'nvim-telescope/telescope.nvim', 
+        'nvim-telescope/telescope.nvim',
         tag = '0.1.1',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
@@ -20,28 +20,47 @@ return require('packer').startup(function(use)
     use "sts10/vim-pink-moon"
     -- LuaLine
     use 'nvim-lualine/lualine.nvim'
-    -- LSP 
-    use {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
-        "neovim/nvim-lspconfig"
-    }
+    -- CMP
     use 'hrsh7th/nvim-cmp'
+    use 'neovim/nvim-lspconfig'
     use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
+    -- snippets
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+    -- LSP
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use "VonHeikemen/lsp-zero.nvim"
+    -- pictograms for the suggestions 
     use 'onsails/lspkind-nvim'
+    -- improves module load
     use 'lewis6991/impatient.nvim'
+    -- discord presence
     use 'andweeb/presence.nvim'
+    -- vim start screen
     use 'mhinz/vim-startify'
+    -- session restoring
     use 'rmagatti/auto-session'
+    -- nvim rust stuff
     use 'simrat39/rust-tools.nvim'
-    use 'hrsh7th/cmp-nvim-lua'
-    use 'hrsh7th/cmp-nvim-lsp-signature-help'
-    use 'hrsh7th/cmp-vsnip'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/vim-vsnip'
+    -- bracket autoclose
     use 'm4xshen/autoclose.nvim'
-    use 'voldikss/vim-floaterm'
+    -- Terminal <Leader>t and code runner <Leader>n
+    use 'CRAG666/betterTerm.nvim'
+    use 'CRAG666/code_runner.nvim'
+    -- wakatime for time management
+    use 'wakatime/vim-wakatime'
+    -- Project management
+    use 'ahmedkhalf/project.nvim'
+    -- vim inspector
+    use 'puremourning/vimspector'
+    -- iluminate selected word appearances
+    use 'RRethy/vim-illuminate'
+    -- easily comment lines
+    use 'numToStr/Comment.nvim'
+    -- highlight argument's uses and definitions
+    use 'm-demare/hlargs.nvim'
 end)
